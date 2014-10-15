@@ -431,11 +431,11 @@
                             <br>
                             <h3>Features:</h3>
                             <ul align="left">
-                            <li> General<ul>
+                            <li> General<ul align="left">
                             <li>Login to account with facebook or email. Two different accounts, consumer and restaurant.</li>
                             </ul>
                             </li>
-                            <li>Consumer<ul>
+                            <li>Consumer<ul align="left">
                             <li>Add themselves to waitlists at restaurants and receive notifications about position in queue and estimated wait time.</li>
                             <li>Order restaurant menu items through phone device.</li>
                             <li>Once in restaurant, diners will be able to ping servers for service instead of waiting for the server to arrive.</li>
@@ -444,7 +444,7 @@
                             </ul>
                             </li>
                             
-                            <li>Restaurant <ul>
+                            <li>Restaurant <ul align="left">
                             <li>Maintain a waitlist</li>
                             <li>Make their own menu</li>
                             <li>Maintain queue of orders</li>
@@ -457,7 +457,7 @@
                             
                             <h3>Actors:</h3>
                             <ul align="left">
-                            <li>Diner<ul>
+                            <li>Diner<ul align="left">
                             <li>Add to waitlist</li>
                             <li>Place orders</li>
                             <li>Make payments</li>
@@ -465,7 +465,7 @@
                             </ul>
                             </li>
                             
-                            <li>Restaurant Staff<ul>
+                            <li>Restaurant Staff<ul algin="left">
                             <li>Keep track of diners and waitlist</li>
                             <li>Make, cancel waitlist positions</li>
                             <li>View, make, cancel orders</li>
@@ -473,7 +473,7 @@
                             </ul>
                             </li>
                             
-                            <li>Manager (Admin) <ul>
+                            <li>Manager (Admin) <ul align="left">
                             <li>Modify menu items</li>
                             <li>Approve/boot staff</li>
                             <li>Set staff active times?</li>
@@ -566,8 +566,8 @@ Main Path:<ol align="left">
 
 <h3>Proposed Architecture</h3>
 <p align="left">Packages: <ul align="left">
-<li>Restaurant:<ul>
-<li>Components:<ul>
+<li>Restaurant:<ul align="left">
+<li>Components:<ul align="left">
 <li>Queue of reservations stored in the Parse database
 Ping customers when their reservation is available
 Organize customers and edit their info (Assign to tables)
@@ -577,8 +577,8 @@ View information on customer orders and edit these orders as necessary</li>
 </ul>
 </li>
 
-<li>Menu:<ul>
-<li>Components:<ul>
+<li>Menu:<ul align="left">
+<li>Components:<ul align="left">
 <li>OpenGl to implement the user interface, orders will be sent to the 
 Restaurant.</li>
 </ul>
@@ -586,8 +586,8 @@ Restaurant.</li>
 </ul>
 </li>
 
-<li>Customer:<ul>
-<li>Components:<ul>
+<li>Customer:<ul align="left">
+<li>Components:<ul aign="left">
 <li>Reserve a spot at the Restaurant</li>
 <li>Functionality to ping the restaurant</li>
 <li>Contains a transition to the Menu package for ordering</li>
