@@ -637,11 +637,126 @@ necessary information, and allowing for push notifications</li>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Iteration 2</h2>
-                            <p class="item-intro text-muted">STUFFFFFFFF</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p>:DDDDDDDDDDDDDDDDDDDDDDDDD</p>
-                            <p>YHIHIHIHIHIHIHIHIH</p>
+                                                        <h2>Iteration 2</h2>
+                            <!--Generated from google Docs Please don't judge-->
+                            <h3>Vision Statement</h3>
+                            <p>Our project aims to bring the users’ dining experience to the next level. On the customer product, users will easily be able to check wait times, place reservations, make orders, and send payment from their phone. On the restaurant’s product, employees will be able to check the number of people in line, see orders that have been placed, receive payment, and see what tables are in need of service.</p>
+                            <br>
+                            <h3>Key Features:</h3>
+                            <ul align="left">
+                            <li> General<ul align="left">
+                            <li>Login to account with facebook or email. Two different accounts, consumer and restaurant.</li>
+                            </ul>
+                            </li>
+                            <li align="left">Consumer<ul align="left">
+                            <li align="left">Add themselves to waitlists at restaurants and receive notifications about position in queue and estimated wait time.</li>
+                            <li align="left">Order restaurant menu items through phone device.</li>
+                            <li align="left">Once in restaurant, diners will be able to ping servers for service instead of waiting for the server to arrive.</li>
+                            </ul>
+                            </li>
+                            
+                            <li align="left">Restaurant <ul align="left">
+                            <li align="left">Maintain a waitlist, which is a queue of people who are currently waiting to be seated in the restaurant and want to be notified as tables are freed.</li>
+                            <li align="left">Make their own menu</li>
+                            <li align="left">Maintain list of orders that have been placed by customers.</li>
+                            <li align="left">See what tables are in need of service.</li>
+                            <li align="left">Contains a list of its registered customers and staff</li>
+                            </ul>
+                            </li>
+                            </ul>
+                            <h3>Extended Features</h3>
+                            <ul align="left">
+                            <li align="left">Pay for order through </li>
+                            <li align="left">Rate individual items on the menu </li>
+                            <li align="left">Receive payment from users’ phones. </li>
+                            <li align="left">Have a section for specialty items </li>
+                            </ul>
+                            
+                            <h3>Actors:</h3>
+                            <ul align="left">
+                            <li align="left">Diner<ul align="left">
+                            <li align="left">Create Account</li>
+                            <li align="left">Login/Logout</li>
+                            <li align="left">Place Self in waitlist</li>
+                            <li align="left">View, make, place own order</li>
+                            <li align="left">Call for Server</li>
+                            </ul>
+                            </li>
+                            
+                            <li align="left">Restaurant Staff<ul algin="left">
+                            <li align="left">Create Account</li>
+                            <li align="left">Login/Logout</li>
+                            <li align="left">View All Current diners</li>
+                            <li align="left">Assing Customers to tables.</li>
+                            </ul>
+                            </li>
+                            
+                            <li align="left">Manager (Admin) <ul align="left">
+                            <li align="left">Create Account</li>
+                            <li align="left">Login/Logout</li>
+                            <li align="left">Create Resturant</li>
+                            <li align="left">Create menu</li>
+                            <li align="left">Modify Menu Items</li>
+                            <li align="left">Authorize Waitlist </li>
+                            <li align="left">View, make, cancel waitlist positions</li>
+                            <li align="left">Approve/boot staff/diners</li>
+                            <li align="left">Set staff active times</li>
+                            </ul>
+                            </li>
+                            
+                            </ul>
+                            
+                            <h3 align="left">Use Cases- Staff/Management</h3>
+                            <img class="img-responsive" src="Use Cases p1.JPG" alt="Use cases">
+                            <img class="img-responsive" src="Use Cases p2.JPG" alt="Use case part 2">
+                            <br>
+                            <h3 align="left">Use Cases- Customer</h3>
+                            <img class="img-responsive" src="Use Cases p3.JPG" alt="Use case part 2">
+
+
+<h3>Proposed Architecture</h3>
+<p align="left">Packages: <ul align="left">
+<li align="left">Restaurant:<ul align="left">
+<li align="left">Components:<ul align="left">
+<li align="left">Queue of reservations stored in the Parse database</li>
+<li align="left">Ping customers when their reservation is available</li>
+<li align="left">Organize customers and edit their info (Assign to tables)</li>
+<li align="left">View information on customer orders and edit these orders as necessary</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li align="left">Menu:<ul align="left">
+<li align="left">Components:<ul align="left">
+<li align="left">OpenGl to implement the user interface, orders will be sent to the 
+Restaurant.</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li align="left">Customer:<ul align="left">
+<li align="left">Components:<ul aign="left">
+<li align="left">Save a place in the waitlist at the Restaurant</li>
+<li align="left">Functionality to ping the restaurant</li>
+<li align="left">Contains a transition to the Menu package for ordering</li>
+<li align="left">Make payments for orders</li>
+</ul>
+</li>
+</ul>
+</li>
+
+</ul>
+
+<h3>Resources Used</h3>
+<ul align="left">
+<li align="left">Parse API for accessing facebook/email, having a functional database to store 
+necessary information, and allowing for push notifications</li>
+<li align="left">OpenGl for interactive menu animations (Adding/removing desired ingredients)</li>
+<li align="left">Android for the device </li>
+<li align="left">Extended Features: Stripe/Venmo/Google Wallet for payment</li>
+</ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Iteration</button>
                         </div>
                     </div>
